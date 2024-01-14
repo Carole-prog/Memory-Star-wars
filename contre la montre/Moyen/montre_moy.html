@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Niveau Moyen</title>
+        <meta charset = "utf-8">
+        <link href="montre_moy.css" rel="stylesheet">
+		<link href="fond.css" rel="stylesheet">
+        <script src="montre_moy.js"></script>
+    </head>
+    <body>
+        <h1> Mode contre la montre ( Moyen ) </h1>
+		<section class="wrapper">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section>
+        <section class = "container">
+        <section class="plateau">
+        </section>
+        <section class="resultat">
+            <div id="timer"> Timer : </div>
+            <br>
+            <div class = "score_vitesse">
+                <table>
+                    <caption> Classement vitesse </caption>
+                    <thead>
+                        <tr>
+                            <th> Rang </th>
+                            <th> Nom </th>
+                            <th> Temps </th>
+                        </tr>
+                    </thead>
+                    <tbody id="temps">
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div class = "score_tentatives">
+                <table>
+                    <caption> Classement coups </caption>
+                    <thead>
+                        <tr>
+                            <th> Rang </th>
+                            <th> Nom </th>
+                            <th> Score </th>
+                        </tr>
+                    </thead>
+                   <tbody id="coups">
+                   </tbody>
+                </table>
+            </div>
+            <br>
+            <input type="button" value="Rejouez" id="play"/>
+        </section>
+        </section>
+        
+        <div><a href="../../index.html">Retour</a></div>
+    </body>
+
+</html>

@@ -1,0 +1,121 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: "Star Wars";
+    background: black;
+}
+@font-face {
+    font-family: "Star Wars";
+    src: url("star_jedi/starjedi/Starjedi.ttf") format("truetype");
+}
+#title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color:gold;
+    text-align: center;
+    font-family: "Star Wars";
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-top: -60px;
+    padding-left: 10px;
+}
+#name{
+    color: gold;
+    font-family: "Star Wars";
+    margin-right: 500px;
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    position : sticky;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float : left;
+    width : 25%;
+    text-align: center;
+}
+
+nav ul::after{
+    content : "";
+    display : table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color:white;
+    border-bottom: 2px solid transparent;
+    padding : 10px 0px;
+}
+
+nav a:hover{
+    color : gold;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display : none;
+    box-shadow: 0px 1px 2px black;
+    background-color: black;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float : none;
+    width : 100%;
+    text-align: left;
+}
+
+.sous a{
+    padding : 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+}
+
+.deroulant > a::after{
+    content :" ▼ ";
+    font-size: 12px;
+}
+
+.sous{
+    display : none;
+    box-shadow: 0px 1px 2px gold;
+    background-color: white;
+    position : absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul li {
+    float : left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+p{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    color:gold;
+    text-align: center;
+    font-family: "Star Wars";
+    margin-top: -60px;
+    padding-left: 10px;
+}
